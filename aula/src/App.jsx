@@ -9,8 +9,12 @@ function App() {
   function addNome(){
     pessoas.push(`${nome} , ${cpf}`);
     setPessoas([...pessoas]);
+    limparForm();
+  }
+  function limparForm(){
     setNome('');
     setCpf('');
+
   }
   return (
 
